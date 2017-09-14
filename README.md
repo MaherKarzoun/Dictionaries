@@ -1,3 +1,4 @@
 # Dictionaries
 Make Your Own Dictionaries 
-i will change it alittle bit 
+
+By using Mysql - apache localhost to storage the Database 
