@@ -1,0 +1,112 @@
+body{
+	font-family: Helvetica, sans-serif;
+	font-size: 93%;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+	background-color: #f2e6ff;
+
+}
+label{color: white;}
+
+h1, h2, h3, h4, h5, h6 {margin-top:0;}
+
+p {margin: 0 0 1em 0;}
+
+.main-header{
+	text-align: center;
+	padding: 30px 50px;
+	margin:0;
+	background-color:#00061a;
+	font-family: arial;
+	font-size: 40px;
+	font-weight: bolder;
+	color: white;
+}
+.search{
+	position: absolute;
+	overflow:auto;
+	left: 0;
+	width: 300px;
+	height: 400px;
+	background-color: #4d76ff;
+}
+.newWord{
+	position: absolute;
+	overflow:auto;
+	right: 0;
+	width: 300px;
+	height: 400px;
+	background-color: #ffc299;
+}
+.middle{
+	position: absolute;
+	overflow:auto;
+	left: 300px;
+	right: 300px;
+	height: 400px;
+	
+	text-align: center;
+}
+.middle-bar{padding-top: 10px 5px 50px 10px;background-color:#006600;}
+.middle .middle-bar iframe{
+	width: 100%;
+	height: 100%;
+}
+.newWord-bar{
+	padding: 10px;
+	font-size: 15px;font-weight:bold;
+	background-color:#ff8000;
+}
+.search-bar{
+	padding: 10px;
+	background-color: #000099;
+    font-size: 15px;font-weight:bold;
+}
+.newWord-bar table{width :90%;margin:auto;border-collapse: collapse;}
+.newWord-bar table td{padding:5px;margin-bottom: 5px; text-align: left;}
+.newWord-bar input[type='submit']{padding: 5px 15px 5px 15px;margin:auto;cursor:pointer;border-radius: 10px;}
+.newWord-bar input[type='text']{margin: auto;text-align: center;}
+.newWord-bar textarea{ margin: auto;text-align: center;}
+
+.search-bar input[type='text']{height: 20px;width: 90%;border-radius: 5px;margin: 5px;}
+.search-bar input[type='submit']{
+	margin: 20px 0  0 5px;
+	height: 25px;
+	width: 80px;
+	cursor: pointer;
+	font-weight:bold;
+
+}
+ ul.resultSearch{
+	list-style: none;
+	margin:0; 	
+	padding: 0 50% 0 10px;
+}
+ul.resultSearch li{
+	text-align: center;
+	font-size: 17px;color: white;
+	margin-top: 10px; padding: 2px ;
+	background-color: #df9f9f;
+	border-bottom: 4px #5a5a8c solid; border-radius: 5px;
+	cursor: pointer;
+}
+#WORD{text-align:center;margin-bottom:10px;background-color: yellow;font-weight: bolder;font-size: 17px;}
+#MEANING{margin: 0;padding: 0; list-style: none;}
+#MEANING li {padding:4px;border-bottom: 1px black solid;margin-bottom: 10px;}
+#MEANING li:nth-child(odd){background-color: #9fdfbf ;}
+#MEANING li:nth-child(even){background-color: #cccccc ;}
+.sucessful{color: green;}
+.error{color:red;}
+.msg-newWord{background-color: yellow;}
+table.dictionary{
+	margin: 20px 0 ;
+	width: 100%;
+}
+
+table.dictionary td{
+	text-align: left;
+	padding: 10px 5px;
+	border-collapse: collapse;
+	background-color: white;
+}

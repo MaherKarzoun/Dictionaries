@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Dictionary</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+
+	<h1 class="main-header"> Dictionaries</h1>
+	<div class="container">
+	<div class="newWord">
+		<div class="newWord-bar">
+			<label>Add a new word to your dictionaty</label>
+			<table>
+				<tr>
+					<td><input type="text" placeholder="Word .. " name="new-word" required/></td>
+				</tr>
+				<tr>
+					<td><textarea cols="35" rows="1" placeholder="Meaning .." name="meaning" required /> </textarea></td>
+				</tr>
+				<tr>
+					<td>
+						<label>Select Languages</label>
+						<select name="language-newWord">
+							<option value="english-english">english-english</option>
+							<option value="arabic-english">arabic-english</option>
+							<option value="english-arabic">english-arabic</option>
+							<option value="italian-english">italian-english</option>
+							<option value="english-italian">english-italian</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit-newWord" value="Save" /></td>
+				</tr>
+			</table>
+		</div>
+		<p class="msg-newWord"></p>
+	</div>
+	<div class="middle">
+		<div class="middle-bar">
+			<label>all my own words in the dictionay</label>
+			<select name="language-show">
+				<option value="english-english">english-english</option>
+				<option value="arabic-english">arabic-english</option>
+				<option value="english-arabic">english-arabic</option>
+				<option value="italian-english">italian-english</option>
+				<option value="english-italian">english-italian</option>
+			</select>
+			<button name="showMe">Show me</button>
+				<table class="dictionary" name="dictionarySelected"></table>
+		</div>
+	</div>
+	<div class="search">
+		<div class="search-bar">
+			<input type="text" placeholder="Search for meaning of word" name="findWord" required /><br>
+			<label>Select Languages</label>
+			<select name="language-search">
+				<option value="english-english">english-english</option>
+				<option value="arabic-english">arabic-english</option>
+				<option value="english-arabic">english-arabic</option>
+				<option value="italian-english">italian-english</option>
+				<option value="english-italian">english-italian</option>
+			</select><br>
+			<input type="submit" name="submit-search" value="Search" /><br><br>
+
+		</div>
+		<p id="WORD"></p>
+		<ul id="MEANING"></ul>	
+		<ul class="resultSearch"></ul> 
+	</div>
+</div>
+</body>
+</html>
